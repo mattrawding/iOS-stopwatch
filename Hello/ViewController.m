@@ -47,6 +47,7 @@
 }
 - (IBAction)onButton:(UIButton *)sender {
     if (running == false) {
+        // if not running yet, start now
         running = true;
         startTime = [NSDate timeIntervalSinceReferenceDate];
         [sender setTitle:@"STOP" forState:UIControlStateNormal];
